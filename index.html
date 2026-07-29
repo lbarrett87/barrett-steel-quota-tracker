@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>UK Steel Quota Tracker | Live Safeguard &amp; Trade Measure Status | Barrett Steel</title>
+<meta name="description" content="Live UK steel safeguard quota tracker from Barrett Steel. See which trade measure quotas are open, running low, or exhausted by category and origin — updated daily, with free email alerts.">
+<link rel="canonical" href="https://www.barrettsteel.com/uk-steel-quota-tracker/">
+
+<meta property="og:title" content="UK Steel Quota Tracker | Barrett Steel">
+<meta property="og:description" content="Live UK steel safeguard / trade measure quota status by category and origin, updated daily. Sign up for free alerts before a quota runs out.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.barrettsteel.com/uk-steel-quota-tracker/">
+<meta property="og:image" content="https://www.barrettsteel.com/images/quota-tracker-og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dataset",
+  "name": "UK Steel Safeguard & Trade Measure Quota Tracker",
+  "description": "Daily-updated tracker of UK steel safeguard / trade measure quota balances by category and country of origin, sourced from the UK Government Trade Tariff API.",
+  "url": "https://www.barrettsteel.com/uk-steel-quota-tracker/",
+  "license": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+  "creator": { "@type": "Organization", "name": "Barrett Steel Limited", "url": "https://www.barrettsteel.com" },
+  "isBasedOn": "https://www.trade-tariff.service.gov.uk"
+}
+</script>
+
+<style>
+  :root{
+    --dark-green:#1E874A;
+    --light-green:#A3D55F;
+    --rich-black:#0D181C;
+    --dark-blue:#003A70;
+    --grey:#8F9D9D;
+    --watch:#C98A1B;
+    --critical:#B33A2E;
+    --exhausted:#6B7676;
+  }
+  *{box-sizing:border-box;}
+  body{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:0; color:var(--rich-black); line-height:1.55; background:#fff;
+    font-size:16px;
+  }
+  a{ color:var(--dark-blue); }
+
+  header.site-header{
+    background:#fff; color:var(--rich-black); padding:20px 24px;
+    display:flex; align-items:center; gap:18px; flex-wrap:wrap;
+    border-bottom:4px solid var(--dark-green);
+    position:relative; overflow:hidden;
+  }
+  header.site-header::after{
+    content:""; position:absolute; top:0; right:-30px; bottom:0; width:160px;
+    background:linear-gradient(115deg, transparent 45%, var(--dark-green) 45%, var(--dark-green) 60%, var(--light-green) 60%, var(--light-green) 75%, transparent 75%);
+    opacity:0.9; pointer-events:none;
+  }
+  header.site-header img{ height:44px; width:auto; position:relative; z-index:1; }
+  header .title-block{ position:relative; z-index:1; }
+  header .title-block h1{ margin:0; font-size:1.55rem; color:var(--rich-black); }
+  header .title-block p{ margin:4px 0 0; color:var(--dark-green); font-size:0.92rem; font-weight:bold; }
+  header .source-link{ margin-left:auto; font-size:0.85rem; color:#4a5a5a; position:relative; z-index:1; }
+  header .source-link a{ color:var(--dark-blue); text-decoration:underline; }
+
+  main{ max-width:1160px; margin:0 auto; padding:0 20px 60px; }
+  section{ margin-top:36px; }
+  h2{ color:var(--dark-blue); border-bottom:3px solid var(--light-green); padding-bottom:6px; font-size:1.4rem; }
+
+  .updated-row{
+    display:flex; align-items:center; gap:16px; flex-wrap:wrap; justify-content:space-between;
+    background:#f2f6f3; border-left:4px solid var(--dark-green);
+    padding:12px 16px; margin-top:20px;
+  }
+  button.refresh-btn{
+    background:var(--dark-green); color:#fff; border:none; padding:9px 18px;
+    border-radius:4px; font-weight:bold; cursor:pointer; font-size:0.9rem;
+  }
+  button.refresh-btn:hover{ background:#166b3a; }
+  button.refresh-btn:focus-visible{ outline:3px solid var(--dark-blue); outline-offset:2px; }
+
+  .legend{ display:flex; gap:16px; flex-wrap:wrap; margin:14px 0 4px; }
+  .legend span{ display:inline-flex; align-items:center; gap:6px; font-size:0.88rem; }
+  .dot{ width:12px; height:12px; border-radius:50%; display:inline-block; }
+
+  .alerts-box{
+    background:#eef7ee; border:1px solid var(--light-green); border-radius:8px;
+    padding:22px 24px; margin-top:20px;
+  }
+  .alerts-box h2{ margin-top:0; }
+  .alerts-box form{ display:grid; gap:12px; max-width:520px; margin-top:14px; }
+  .alerts-box label{ font-weight:bold; font-size:0.92rem; }
+  .alerts-box input[type=text], .alerts-box input[type=email], .alerts-box select{
+    width:100%; padding:9px; border:1px solid var(--grey); border-radius:4px; font-size:1rem;
+  }
+  .checkbox-row{ display:flex; gap:8px; align-items:flex-start; font-weight:normal; font-size:0.85rem; }
+  .alerts-box button[type=submit]{
+    background:var(--dark-blue); color:#fff; border:none; padding:11px 20px;
+    border-radius:4px; font-weight:bold; cursor:pointer; width:fit-content;
+  }
+  .alerts-box button[type=submit]:hover{ background:#00294f; }
+  .success-msg{ display:none; color:var(--dark-green); font-weight:bold; margin-top:8px; }
+
+  /* ---------- search ---------- */
+  .search-box{ margin-top:16px; }
+  .search-box input[type=search]{
+    width:100%; padding:12px 14px; border:2px solid var(--dark-blue); border-radius:6px;
+    font-size:1rem; font-family:inherit;
+  }
+  .search-box input[type=search]:focus-visible{ outline:3px solid var(--light-green); outline-offset:1px; }
+  .search-meta{ font-size:0.85rem; color:#4a5a5a; margin-top:6px; }
+  .no-results{ font-size:0.95rem; color:#4a5a5a; padding:16px 0; }
+
+  /* ---------- category card grid ---------- */
+  .category-grid{
+    display:grid; grid-template-columns:repeat(auto-fill, minmax(250px, 1fr));
+    gap:16px; margin-top:16px;
+  }
+  .category-card{
+    background:#fff; border:1px solid #dde5e2; border-radius:10px; overflow:hidden;
+    cursor:pointer; transition:box-shadow 0.15s, transform 0.15s; text-align:left;
+    display:flex; flex-direction:column;
+  }
+  .category-card:hover{ box-shadow:0 8px 20px rgba(13,24,28,0.12); transform:translateY(-2px); }
+  .category-card:focus-visible{ outline:3px solid var(--dark-blue); outline-offset:2px; }
+  .card-top-bar{ height:6px; width:100%; }
+  .card-top-bar.status-open{ background:var(--dark-green); }
+  .card-top-bar.status-watch{ background:var(--watch); }
+  .card-top-bar.status-critical{ background:var(--critical); }
+  .card-top-bar.status-exhausted{ background:var(--exhausted); }
+  .card-body{ padding:16px; flex:1; display:flex; flex-direction:column; }
+  .card-body .code{ font-size:0.75rem; color:var(--grey); text-transform:uppercase; letter-spacing:0.04em; }
+  .card-body h3{ margin:2px 0 0; font-size:1.02rem; color:var(--rich-black); line-height:1.3; }
+  .product-tag{
+    display:inline-block; margin-top:8px; font-size:0.76rem; font-weight:bold;
+    color:var(--dark-green); background:#eef7ee; padding:3px 8px; border-radius:10px; width:fit-content;
+  }
+  .card-status-row{ display:flex; justify-content:space-between; align-items:center; margin-top:14px; font-size:0.85rem; }
+  .card-status-row .pct{ font-weight:bold; }
+  .card-status-row .status-text.status-open{ color:var(--dark-green); }
+  .card-status-row .status-text.status-watch{ color:var(--watch); }
+  .card-status-row .status-text.status-critical{ color:var(--critical); }
+  .card-status-row .status-text.status-exhausted{ color:var(--exhausted); }
+  .card-track{ background:#e4e9e6; border-radius:5px; height:8px; margin-top:6px; overflow:hidden; }
+  .card-fill{ height:100%; border-radius:5px 0 0 5px; }
+  .card-fill.status-open{ background:var(--dark-green); }
+  .card-fill.status-watch{ background:var(--watch); }
+  .card-fill.status-critical{ background:var(--critical); }
+  .card-fill.status-exhausted{ background:var(--exhausted); }
+  .view-btn{
+    margin-top:14px; width:100%; background:var(--dark-blue); color:#fff; border:none;
+    padding:9px; border-radius:4px; font-weight:bold; cursor:pointer; font-size:0.85rem;
+  }
+  .view-btn:hover{ background:#00294f; }
+
+  /* ---------- detail panel (slide-in on desktop, bottom sheet on mobile) ---------- */
+  #detail-overlay{
+    position:fixed; inset:0; background:rgba(13,24,28,0.55); z-index:100;
+    display:none; opacity:0; transition:opacity 0.2s;
+  }
+  #detail-overlay.open{ display:block; opacity:1; }
+  #detail-panel{
+    position:fixed; top:0; right:0; bottom:0; width:min(440px, 100%);
+    background:#fff; z-index:101; overflow-y:auto;
+    transform:translateX(100%); transition:transform 0.25s ease;
+    box-shadow:-10px 0 30px rgba(0,0,0,0.2);
+  }
+  #detail-panel.open{ transform:translateX(0); }
+
+  .panel-header{
+    background:var(--dark-blue); color:#fff; padding:18px 20px; position:sticky; top:0; z-index:2;
+    display:flex; justify-content:space-between; align-items:flex-start; gap:12px;
+  }
+  .panel-header .code{ color:var(--light-green); font-size:0.8rem; text-transform:uppercase; letter-spacing:0.04em; }
+  .panel-header h3{ margin:2px 0 0; font-size:1.15rem; }
+  .panel-close{
+    background:none; border:none; color:#fff; font-size:1.4rem; cursor:pointer; line-height:1;
+    padding:4px 8px; border-radius:4px;
+  }
+  .panel-close:hover{ background:rgba(255,255,255,0.15); }
+  .panel-body{ padding:20px; }
+
+  .quota-summary{
+    background:var(--paper, #f2f6f3); border-radius:8px; padding:18px; display:flex; gap:20px; align-items:center; flex-wrap:wrap;
+  }
+  .quota-summary .big-pct{ font-size:2.2rem; font-weight:bold; min-width:90px; }
+  .quota-summary .summary-stats{ flex:1; min-width:160px; }
+  .quota-summary .summary-stats .row{ display:flex; justify-content:space-between; font-size:0.88rem; margin-bottom:4px; }
+  .quota-summary .track{ background:#e4e9e6; border-radius:5px; height:9px; margin-top:8px; overflow:hidden; }
+  .quota-summary .fill{ height:100%; border-radius:5px 0 0 5px; }
+
+  .panel-body h4{ color:var(--dark-blue); margin:24px 0 8px; font-size:1rem; }
+  table.origin-table{ width:100%; border-collapse:collapse; font-size:0.85rem; }
+  table.origin-table th, table.origin-table td{ padding:8px 6px; border-bottom:1px solid #eceff0; text-align:left; }
+  table.origin-table th{ background:#f2f6f3; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.03em; color:var(--rich-black); }
+
+  .status-badge{
+    display:inline-flex; align-items:center; gap:6px; padding:3px 10px;
+    border-radius:12px; font-size:0.7rem; font-weight:bold; color:#fff; white-space:nowrap;
+    text-transform:uppercase; letter-spacing:0.03em;
+  }
+  .status-open{ background:var(--dark-green); }
+  .status-watch{ background:var(--watch); }
+  .status-critical{ background:var(--critical); }
+  .status-exhausted{ background:var(--exhausted); }
+
+  .panel-actions{ display:grid; gap:10px; margin-top:24px; }
+  .panel-actions a, .panel-actions button{
+    display:block; text-align:center; padding:12px; border-radius:5px; font-weight:bold;
+    text-decoration:none; cursor:pointer; font-size:0.92rem; border:none; font-family:inherit;
+  }
+  .action-primary{ background:var(--dark-green); color:#fff; }
+  .action-primary:hover{ background:#166b3a; }
+  .action-secondary{ background:#fff; color:var(--dark-blue); border:2px solid var(--dark-blue) !important; }
+  .action-secondary:hover{ background:#f2f6f3; }
+  .action-tertiary{ background:none; color:var(--dark-blue); text-decoration:underline; padding:4px; }
+
+  @media (max-width:700px){
+    #detail-panel{
+      top:auto; left:0; right:0; bottom:0; width:100%; height:90vh;
+      border-radius:16px 16px 0 0; transform:translateY(100%);
+    }
+    #detail-panel.open{ transform:translateY(0); }
+  }
+
+  .cta-band{
+    background:var(--dark-green); color:#fff; border-radius:8px; padding:30px 24px;
+    text-align:center; margin-top:48px;
+  }
+  .cta-band h2{ color:#fff; border-bottom:none; }
+  .cta-buttons{ display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-top:16px; }
+  .cta-buttons a{ background:#fff; color:var(--dark-green); font-weight:bold; padding:12px 22px; border-radius:4px; text-decoration:none; }
+  .cta-buttons a.secondary{ background:transparent; color:#fff; border:2px solid #fff; }
+
+  details.faq{ border:1px solid #e4e9e6; border-radius:6px; padding:12px 16px; margin-bottom:10px; }
+  details.faq summary{ font-weight:bold; cursor:pointer; color:var(--dark-blue); }
+
+  footer.disclaimer{ background:#f2f6f3; margin-top:48px; padding:22px 20px; font-size:0.84rem; color:#3a4a4a; }
+  footer.disclaimer a{ color:var(--dark-blue); }
+
+  .visually-hidden{ position:absolute; width:1px; height:1px; overflow:hidden; clip:rect(0 0 0 0); white-space:nowrap; }
+</style>
+</head>
+<body>
+
+<header class="site-header">
+  <!-- Real Barrett Steel logo, confirmed live on barrettsteel.com -->
+  <img src="https://www.barrettsteel.com/SiteFiles/Images/logos/BarrettSteel-SL.svg" alt="Barrett Steel Limited">
+  <div class="title-block">
+    <h1>UK Steel Quota Tracker</h1>
+    <p>Live safeguard &amp; trade measure quota status, by category and origin</p>
+  </div>
+  <span class="source-link">Data source: <a href="https://www.trade-tariff.service.gov.uk" target="_blank" rel="noopener">trade-tariff.service.gov.uk</a></span>
+</header>
+
+<main>
+  <section class="intro" style="margin-top:28px;">
+    <p>
+      UK steel safeguard quotas — now officially termed <strong>UK steel trade measures</strong> —
+      limit how much steel can be imported from each country, tariff-free, within a set period.
+      Once a quota's balance runs out, imports in that category and origin face a 25% tariff until
+      the next period opens. Tap any category below to see the full breakdown by country of origin.
+    </p>
+    <div class="updated-row">
+      <span id="last-updated">Data last updated: loading…</span>
+      <button class="refresh-btn" id="refresh-btn" type="button">↻ Refresh Figures</button>
+    </div>
+    <div class="legend">
+      <span><span class="dot" style="background:var(--dark-green)"></span><strong>OPEN</strong> — comfortable balance remaining</span>
+      <span><span class="dot" style="background:var(--watch)"></span><strong>WATCH</strong> — over ~70% used</span>
+      <span><span class="dot" style="background:var(--critical)"></span><strong>CRITICAL</strong> — over ~90% used or exhaustion imminent</span>
+      <span><span class="dot" style="background:var(--exhausted)"></span><strong>EXHAUSTED</strong> — balance at zero</span>
+    </div>
+  </section>
+
+  <section class="alerts-box" aria-labelledby="alerts-heading">
+    <h2 id="alerts-heading">Get notified before a quota runs out</h2>
+    <p>Tell us which categories matter to you and we'll email you the moment one moves to WATCH or CRITICAL.</p>
+    <!-- DEV NOTE: point this form at your Google Form / Formspree endpoint -->
+    <form id="alerts-form" action="https://docs.google.com/forms/d/e/REPLACE_WITH_FORM_ID/formResponse" method="POST" target="hidden-iframe">
+      <div>
+        <label for="alert-name">Name</label>
+        <input type="text" id="alert-name" name="entry.REPLACE_NAME" required>
+      </div>
+      <div>
+        <label for="alert-email">Email</label>
+        <input type="email" id="alert-email" name="entry.REPLACE_EMAIL" required>
+      </div>
+      <div>
+        <label for="alert-company">Company</label>
+        <input type="text" id="alert-company" name="entry.REPLACE_COMPANY">
+      </div>
+      <div>
+        <label for="alert-categories">Categories you want alerts for</label>
+        <select id="alert-categories" name="entry.REPLACE_CATEGORIES" multiple size="6"></select>
+      </div>
+      <div class="checkbox-row">
+        <input type="checkbox" id="alert-consent" required>
+        <label for="alert-consent" style="font-weight:normal;">
+          I agree to be contacted by Barrett Steel about quota alerts I've selected, per the
+          <a href="/cookie-policy/">Privacy Policy</a>. You can unsubscribe at any time.
+        </label>
+      </div>
+      <button type="submit">Notify me</button>
+      <p class="success-msg" id="alerts-success">Thanks — you're signed up for alerts.</p>
+    </form>
+    <iframe name="hidden-iframe" class="visually-hidden" title="form submission target"></iframe>
+  </section>
+
+  <section id="quota-cards-section" aria-live="polite">
+    <h2>Live quota status by category</h2>
+    <div class="search-box">
+      <label for="quota-search" class="visually-hidden">Search by category, product, quota number, or origin country</label>
+      <input type="search" id="quota-search" placeholder="Search by category, product (e.g. Merchant Bar), quota number, or origin country…">
+      <p class="search-meta" id="search-meta"></p>
+    </div>
+    <p id="loading-msg">Loading live quota data…</p>
+    <div class="category-grid" id="category-grid"></div>
+  </section>
+
+  <section class="cta-band">
+    <h2>Need to secure stock before a quota tightens?</h2>
+    <p>Talk to your local Barrett Steel depot — we'll help you plan orders around quota timing.</p>
+    <div class="cta-buttons">
+      <a href="/Depot-Network">Find your local depot</a>
+      <a href="/quick-quote/" class="secondary">Request a quote</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>Frequently asked questions</h2>
+    <details class="faq">
+      <summary>What is a steel safeguard / trade measure quota?</summary>
+      <p>It's a government-set limit on how much steel can be imported tariff-free from a given
+      country within a defined period. Once the quota balance for that category and origin is used
+      up, further imports face a 25% tariff until the next period opens.</p>
+    </details>
+    <details class="faq">
+      <summary>What happens when a quota is exhausted?</summary>
+      <p>Imports in that category and origin still go ahead, but incur the out-of-quota tariff rate
+      until the next quota period begins.</p>
+    </details>
+    <details class="faq">
+      <summary>How often is this data updated?</summary>
+      <p>Automatically, once a day, direct from the UK Government's Trade Tariff service. You can
+      also trigger a manual refresh using the button above.</p>
+    </details>
+    <details class="faq">
+      <summary>How do I get notified before a quota runs out?</summary>
+      <p>Use the sign-up form above — choose the categories you care about and we'll email you as
+      soon as one moves to WATCH or CRITICAL status.</p>
+    </details>
+  </section>
+</main>
+
+<footer class="disclaimer">
+  <p>
+    Figures on this page are refreshed automatically once a day from the UK Government's Trade
+    Tariff service and may lag the true HMRC position by up to 24 hours, particularly during
+    periods of high allocation activity. Predicted exhaustion dates are estimates based on the
+    average rate of usage so far this quota period and carry no guarantee. Nothing on this page
+    constitutes customs, legal, or financial advice and should not be relied upon as the basis for
+    a shipment decision — always confirm current quota status directly with HMRC or your customs
+    agent before making one. Contains public sector information licensed under the
+    <a href="https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence v3.0</a>.
+  </p>
+</footer>
+
+<!-- Detail panel: slide-in from right on desktop, bottom sheet on mobile -->
+<div id="detail-overlay"></div>
+<div id="detail-panel" role="dialog" aria-modal="true" aria-labelledby="panel-title">
+  <div class="panel-header">
+    <div>
+      <div class="code" id="panel-code"></div>
+      <h3 id="panel-title"></h3>
+    </div>
+    <button class="panel-close" id="panel-close" aria-label="Close">&times;</button>
+  </div>
+  <div class="panel-body" id="panel-body"></div>
+</div>
+
+<script>
+<script>
+// This version reads a pre-built JSON file from GitHub (populated daily by
+// a scheduled GitHub Action running scripts/fetch_quotas.py) rather than
+// calling the government API directly from the browser — the direct-browser
+// approach was tried and blocked by CORS, so this is the working fallback.
+//
+// DEV NOTE: replace REPLACE_ORG/REPLACE_REPO below once the GitHub repo
+// exists and the daily workflow has run at least once successfully.
+const DATA_URL = "https://raw.githubusercontent.com/REPLACE_ORG/REPLACE_REPO/main/quota-data.json";
+
+function loadData(){
+  fetch(DATA_URL, { cache: "no-store" })
+    .then(r => { if (!r.ok) throw new Error("Network response was not ok"); return r.json(); })
+    .then(data => {
+      if (!data.categories || !data.categories.length) throw new Error("No quota data in file");
+      renderTables(data);
+    })
+    .catch(err => {
+      document.getElementById("loading-msg").textContent =
+        "Couldn't load live data right now — please try refreshing, or check back shortly.";
+      console.error(err);
+    });
+}
+
+let CATEGORY_DATA = [];
+
+function statusClass(status){
+  return { OPEN:"status-open", WATCH:"status-watch", CRITICAL:"status-critical", EXHAUSTED:"status-exhausted" }[status] || "status-open";
+}
+
+function worstStatus(quotas){
+  const order = ["EXHAUSTED","CRITICAL","WATCH","OPEN"];
+  for(const s of order){ if(quotas.some(q => q.status === s)) return s; }
+  return "OPEN";
+}
+
+function aggregate(quotas){
+  const initial = quotas.reduce((sum,q) => sum + q.initial_volume, 0);
+  const balance = quotas.reduce((sum,q) => sum + q.balance, 0);
+  const pct = initial ? Math.round(((initial - balance) / initial) * 1000) / 10 : 0;
+  return { initial, balance, pct, status: worstStatus(quotas) };
+}
+
+function renderCards(){
+  const grid = document.getElementById("category-grid");
+  grid.innerHTML = "";
+  CATEGORY_DATA.forEach((cat, idx) => {
+    const agg = aggregate(cat.quotas);
+    const card = document.createElement("button");
+    card.type = "button";
+    card.className = "category-card";
+    card.dataset.search = (cat.code + " " + cat.name + " " + (cat.related_product||"") + " " +
+      cat.quotas.map(q => q.order_number + " " + q.origin).join(" ")).toLowerCase();
+    card.innerHTML = `
+      <div class="card-top-bar ${statusClass(agg.status)}"></div>
+      <div class="card-body">
+        <div class="code">${cat.code}</div>
+        <h3>${cat.name}</h3>
+        ${cat.related_product ? `<span class="product-tag">${cat.related_product}</span>` : ""}
+        <div class="card-status-row">
+          <span class="pct">${agg.pct}% used</span>
+          <span class="status-text ${statusClass(agg.status)}">${agg.status}</span>
+        </div>
+        <div class="card-track"><div class="card-fill ${statusClass(agg.status)}" style="width:${Math.min(agg.pct,100)}%;"></div></div>
+        <button type="button" class="view-btn" tabindex="-1">View availability</button>
+      </div>
+    `;
+    card.addEventListener("click", () => openPanel(idx));
+    grid.appendChild(card);
+  });
+  setupSearch();
+}
+
+function openPanel(idx){
+  const cat = CATEGORY_DATA[idx];
+  const agg = aggregate(cat.quotas);
+
+  document.getElementById("panel-code").textContent = cat.code + (cat.related_product ? " · " + cat.related_product : "");
+  document.getElementById("panel-title").textContent = cat.name;
+
+  const originRows = cat.quotas.map(q => `
+    <tr>
+      <td>${q.origin}</td>
+      <td>${Math.round(q.balance).toLocaleString()} / ${Math.round(q.initial_volume).toLocaleString()} t</td>
+      <td>${q.pct_used}%</td>
+      <td>${q.last_allocation_date}</td>
+      <td>${q.predicted_exhaustion}</td>
+      <td><span class="status-badge ${statusClass(q.status)}">${q.status}</span></td>
+    </tr>
+  `).join("");
+
+  document.getElementById("panel-body").innerHTML = `
+    <div class="quota-summary">
+      <div class="big-pct" style="color:var(--${agg.status==='OPEN'?'dark-green':agg.status==='WATCH'?'watch':agg.status==='CRITICAL'?'critical':'exhausted'})">${agg.pct}%</div>
+      <div class="summary-stats">
+        <div class="row"><span>Total quota volume</span><strong>${Math.round(agg.initial).toLocaleString()} t</strong></div>
+        <div class="row"><span>Remaining balance</span><strong>${Math.round(agg.balance).toLocaleString()} t</strong></div>
+        <div class="row"><span>Origins in this category</span><strong>${cat.quotas.length}</strong></div>
+        <div class="track"><div class="fill ${statusClass(agg.status)}" style="width:${Math.min(agg.pct,100)}%; background:var(--${agg.status==='OPEN'?'dark-green':agg.status==='WATCH'?'watch':agg.status==='CRITICAL'?'critical':'exhausted'});"></div></div>
+      </div>
+    </div>
+
+    <h4>Availability by origin</h4>
+    <table class="origin-table">
+      <thead><tr><th>Origin</th><th>Balance / Initial</th><th>% Used</th><th>Last Allocation</th><th>Predicted Exhaustion</th><th>Status</th></tr></thead>
+      <tbody>${originRows}</tbody>
+    </table>
+
+    <div class="panel-actions">
+      <a class="action-primary" href="/quick-quote/?category=${encodeURIComponent(cat.code)}">Request a quote</a>
+      <button class="action-secondary" type="button" onclick="closePanel(); document.getElementById('alert-categories').focus(); document.querySelector('.alerts-box').scrollIntoView({behavior:'smooth'});">Get alerts for this category</button>
+      ${cat.related_product_url ? `<a class="action-tertiary" href="${cat.related_product_url}">View ${cat.related_product} on barrettsteel.com →</a>` : ""}
+    </div>
+  `;
+
+  document.getElementById("detail-overlay").classList.add("open");
+  document.getElementById("detail-panel").classList.add("open");
+  document.body.style.overflow = "hidden";
+}
+
+function closePanel(){
+  document.getElementById("detail-overlay").classList.remove("open");
+  document.getElementById("detail-panel").classList.remove("open");
+  document.body.style.overflow = "";
+}
+document.getElementById("panel-close").addEventListener("click", closePanel);
+document.getElementById("detail-overlay").addEventListener("click", closePanel);
+document.addEventListener("keydown", e => { if(e.key === "Escape") closePanel(); });
+
+function renderTables(data){
+  CATEGORY_DATA = data.categories;
+  document.getElementById("loading-msg").remove();
+
+  const updated = new Date(data.last_updated);
+  document.getElementById("last-updated").textContent =
+    "Data last updated: " + updated.toLocaleString("en-GB", { dateStyle:"medium", timeStyle:"short" });
+
+  const select = document.getElementById("alert-categories");
+  select.innerHTML = "";
+  data.categories.forEach(cat => {
+    const opt = document.createElement("option");
+    opt.value = cat.code;
+    opt.textContent = `${cat.code}: ${cat.name}`;
+    select.appendChild(opt);
+  });
+
+  renderCards();
+}
+
+function setupSearch(){
+  const input = document.getElementById("quota-search");
+  const meta = document.getElementById("search-meta");
+  const grid = document.getElementById("category-grid");
+
+  input.oninput = () => {
+    const term = input.value.trim().toLowerCase();
+    const cards = Array.from(grid.querySelectorAll(".category-card"));
+    let visible = 0;
+    cards.forEach(card => {
+      const match = term === "" || card.dataset.search.includes(term);
+      card.style.display = match ? "" : "none";
+      if (match) visible++;
+    });
+
+    let noResults = document.getElementById("no-results-msg");
+    if (visible === 0) {
+      if (!noResults) {
+        noResults = document.createElement("p");
+        noResults.id = "no-results-msg";
+        noResults.className = "no-results";
+        grid.parentElement.insertBefore(noResults, grid);
+      }
+      noResults.textContent = `No categories, products, quota numbers, or origins match "${input.value}".`;
+    } else if (noResults) {
+      noResults.remove();
+    }
+    meta.textContent = term ? `Showing ${visible} of ${cards.length} categories` : "";
+  };
+}
+
+document.getElementById("refresh-btn").addEventListener("click", () => {
+  document.getElementById("category-grid").innerHTML = "";
+  const oldNoResults = document.getElementById("no-results-msg");
+  if (oldNoResults) oldNoResults.remove();
+  document.getElementById("quota-search").value = "";
+  document.getElementById("search-meta").textContent = "";
+  const msg = document.createElement("p");
+  msg.id = "loading-msg";
+  msg.textContent = "Refreshing…";
+  document.getElementById("quota-cards-section").insertBefore(msg, document.getElementById("category-grid"));
+  loadData();
+});
+
+document.getElementById("alerts-form").addEventListener("submit", () => {
+  setTimeout(() => { document.getElementById("alerts-success").style.display = "block"; }, 600);
+});
+
+loadData();
+</script>
+
+</body>
+</html>
