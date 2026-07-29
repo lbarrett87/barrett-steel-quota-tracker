@@ -1,0 +1,886 @@
+{
+  "last_updated": "2026-07-29T19:59:03.161199+00:00",
+  "source": "UK Government Trade Tariff API (trade-tariff.service.gov.uk), Open Government Licence v3.0",
+  "categories": [
+    {
+      "code": "CAT 1",
+      "name": "Non-alloy & other alloy hot-rolled sheets & strips",
+      "related_product": "Steel Sheets and Plates",
+      "related_product_url": "/products/general-steels/sheet-and-plate/",
+      "quotas": [
+        {
+          "order_number": "058600",
+          "origin": "European Union",
+          "initial_volume": 93750000.0,
+          "balance": 75804826.97,
+          "pct_used": 19.1,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "25 Nov 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058601",
+          "origin": "India",
+          "initial_volume": 8364000.0,
+          "balance": 8360129.54,
+          "pct_used": 0.0,
+          "last_allocation_date": "20 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058602",
+          "origin": "South Korea",
+          "initial_volume": 2196000.0,
+          "balance": 818250.0,
+          "pct_used": 62.7,
+          "last_allocation_date": "01 Jul 2026",
+          "predicted_exhaustion": "15 Aug 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058603",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 12440000.0,
+          "balance": 2145235.796,
+          "pct_used": 82.8,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "04 Aug 2026",
+          "status": "WATCH"
+        }
+      ]
+    },
+    {
+      "code": "CAT 4",
+      "name": "Metallic coated sheets",
+      "related_product": "Steel Sheets and Plates",
+      "related_product_url": "/products/general-steels/sheet-and-plate/",
+      "quotas": [
+        {
+          "order_number": "058604",
+          "origin": "European Union",
+          "initial_volume": 127568000.0,
+          "balance": 97322826.324,
+          "pct_used": 23.7,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "27 Oct 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058605",
+          "origin": "India",
+          "initial_volume": 31449000.0,
+          "balance": 31224006.0,
+          "pct_used": 0.7,
+          "last_allocation_date": "10 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058606",
+          "origin": "South Korea",
+          "initial_volume": 25188000.0,
+          "balance": 18966474.0,
+          "pct_used": 24.7,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "23 Oct 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058607",
+          "origin": "Vietnam",
+          "initial_volume": 43591000.0,
+          "balance": 43494575.0,
+          "pct_used": 0.2,
+          "last_allocation_date": "17 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058608",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 25029000.0,
+          "balance": 15220727.843,
+          "pct_used": 39.2,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "11 Sep 2026",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 5",
+      "name": "Organic coated sheets",
+      "related_product": "Steel Sheets and Plates",
+      "related_product_url": "/products/general-steels/sheet-and-plate/",
+      "quotas": [
+        {
+          "order_number": "058609",
+          "origin": "European Union",
+          "initial_volume": 12459000.0,
+          "balance": 6629356.894,
+          "pct_used": 46.8,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "30 Aug 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058610",
+          "origin": "South Korea",
+          "initial_volume": 4923000.0,
+          "balance": 4621597.0,
+          "pct_used": 6.1,
+          "last_allocation_date": "01 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058611",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 1498000.0,
+          "balance": 1363529.39,
+          "pct_used": 9.0,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 6",
+      "name": "Tin mill products",
+      "related_product": "Steel Sheets and Plates",
+      "related_product_url": "/products/general-steels/sheet-and-plate/",
+      "quotas": [
+        {
+          "order_number": "058612",
+          "origin": "European Union",
+          "initial_volume": 9948000.0,
+          "balance": 9423338.679,
+          "pct_used": 5.3,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058613",
+          "origin": "Japan",
+          "initial_volume": 78000.0,
+          "balance": 78000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "No allocations yet",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058614",
+          "origin": "South Korea",
+          "initial_volume": 633000.0,
+          "balance": 295496.0,
+          "pct_used": 53.3,
+          "last_allocation_date": "22 Jul 2026",
+          "predicted_exhaustion": "23 Aug 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058615",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 6787000.0,
+          "balance": 5896643.48,
+          "pct_used": 13.1,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 7",
+      "name": "Non-alloy & other alloy quarto plates",
+      "related_product": "Steel Sheets and Plates",
+      "related_product_url": "/products/general-steels/sheet-and-plate/",
+      "quotas": [
+        {
+          "order_number": "058616",
+          "origin": "European Union",
+          "initial_volume": 50217000.0,
+          "balance": 40377843.53,
+          "pct_used": 19.6,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "21 Nov 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058617",
+          "origin": "South Korea",
+          "initial_volume": 8448000.0,
+          "balance": 8444000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "03 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058618",
+          "origin": "United States",
+          "initial_volume": 191000.0,
+          "balance": 190571.321,
+          "pct_used": 0.2,
+          "last_allocation_date": "21 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058619",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 3603000.0,
+          "balance": 3049246.239,
+          "pct_used": 15.4,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 12A",
+      "name": "Alloy merchant bars & light sections",
+      "related_product": "Carbon and Alloy Steel",
+      "related_product_url": "/products/engineering/carbon-and-alloy-steel/",
+      "quotas": [
+        {
+          "order_number": "058620",
+          "origin": "European Union",
+          "initial_volume": 20889000.0,
+          "balance": 16457020.815,
+          "pct_used": 21.2,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "10 Nov 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058621",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 5585000.0,
+          "balance": 5208423.601,
+          "pct_used": 6.7,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 12B",
+      "name": "Non-alloy merchant bars & light sections",
+      "related_product": "Merchant Bar Steel",
+      "related_product_url": "/products/general-steels/merchant-bar/",
+      "quotas": [
+        {
+          "order_number": "058622",
+          "origin": "European Union",
+          "initial_volume": 11904000.0,
+          "balance": 2234919.428,
+          "pct_used": 81.2,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "05 Aug 2026",
+          "status": "WATCH"
+        },
+        {
+          "order_number": "058623",
+          "origin": "Turkey",
+          "initial_volume": 4663000.0,
+          "balance": 343888.619,
+          "pct_used": 92.6,
+          "last_allocation_date": "23 Jul 2026",
+          "predicted_exhaustion": "01 Aug 2026",
+          "status": "CRITICAL"
+        },
+        {
+          "order_number": "058624",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 1135000.0,
+          "balance": 0.0,
+          "pct_used": 100.0,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Already exhausted",
+          "status": "EXHAUSTED"
+        }
+      ]
+    },
+    {
+      "code": "CAT 13",
+      "name": "Rebars",
+      "related_product": null,
+      "related_product_url": null,
+      "quotas": [
+        {
+          "order_number": "058625",
+          "origin": "European Union",
+          "initial_volume": 37256000.0,
+          "balance": 31845511.592,
+          "pct_used": 14.5,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058626",
+          "origin": "Turkey",
+          "initial_volume": 12645000.0,
+          "balance": 9252740.0,
+          "pct_used": 26.8,
+          "last_allocation_date": "01 Jul 2026",
+          "predicted_exhaustion": "14 Oct 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058627",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 17093000.0,
+          "balance": 2150.0,
+          "pct_used": 100.0,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "29 Jul 2026",
+          "status": "CRITICAL"
+        }
+      ]
+    },
+    {
+      "code": "CAT 14",
+      "name": "Stainless bars & light sections",
+      "related_product": "Stainless, Duplex & Super Duplex",
+      "related_product_url": "/products/international/stainless,-duplex-super-duplex/",
+      "quotas": [
+        {
+          "order_number": "058628",
+          "origin": "European Union",
+          "initial_volume": 4135000.0,
+          "balance": 2589945.394,
+          "pct_used": 37.4,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "14 Sep 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058629",
+          "origin": "United States",
+          "initial_volume": 445000.0,
+          "balance": 386758.215,
+          "pct_used": 13.1,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058630",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 590000.0,
+          "balance": 81440.843,
+          "pct_used": 86.2,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "03 Aug 2026",
+          "status": "WATCH"
+        }
+      ]
+    },
+    {
+      "code": "CAT 15",
+      "name": "Stainless wire rod",
+      "related_product": null,
+      "related_product_url": null,
+      "quotas": [
+        {
+          "order_number": "058631",
+          "origin": "European Union",
+          "initial_volume": 238000.0,
+          "balance": 236179.0,
+          "pct_used": 0.8,
+          "last_allocation_date": "22 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058632",
+          "origin": "South Korea",
+          "initial_volume": 33000.0,
+          "balance": 33000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "No allocations yet",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058633",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 59000.0,
+          "balance": 0.0,
+          "pct_used": 100.0,
+          "last_allocation_date": "03 Jul 2026",
+          "predicted_exhaustion": "Already exhausted",
+          "status": "EXHAUSTED"
+        }
+      ]
+    },
+    {
+      "code": "CAT 16",
+      "name": "Non-alloy & other alloy wire rod",
+      "related_product": null,
+      "related_product_url": null,
+      "quotas": [
+        {
+          "order_number": "058634",
+          "origin": "European Union",
+          "initial_volume": 42117000.0,
+          "balance": 34888599.342,
+          "pct_used": 17.2,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058635",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 2626000.0,
+          "balance": 1357060.0,
+          "pct_used": 48.3,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "28 Aug 2026",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 17",
+      "name": "Angles, shapes & sections",
+      "related_product": "Mild Steel Angles",
+      "related_product_url": "/products/general-steels/mild-steel-angles/",
+      "quotas": [
+        {
+          "order_number": "058636",
+          "origin": "European Union",
+          "initial_volume": 63419000.0,
+          "balance": 46906492.605,
+          "pct_used": 26.0,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "17 Oct 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058637",
+          "origin": "South Korea",
+          "initial_volume": 750000.0,
+          "balance": 729100.0,
+          "pct_used": 2.8,
+          "last_allocation_date": "22 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058638",
+          "origin": "United States",
+          "initial_volume": 213000.0,
+          "balance": 213000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "No allocations yet",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058639",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 3307000.0,
+          "balance": 2755620.45,
+          "pct_used": 16.7,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 19",
+      "name": "Railway material",
+      "related_product": null,
+      "related_product_url": null,
+      "quotas": [
+        {
+          "order_number": "058640",
+          "origin": "European Union",
+          "initial_volume": 1859000.0,
+          "balance": 1607314.0,
+          "pct_used": 13.5,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058641",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 11000.0,
+          "balance": 8078.0,
+          "pct_used": 26.6,
+          "last_allocation_date": "03 Jul 2026",
+          "predicted_exhaustion": "15 Oct 2026",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 20",
+      "name": "Gas pipes",
+      "related_product": "Nominal Bore Tube",
+      "related_product_url": "/products/tubes/nominal-bore-tube/",
+      "quotas": [
+        {
+          "order_number": "058642",
+          "origin": "European Union",
+          "initial_volume": 4474000.0,
+          "balance": 3475517.445,
+          "pct_used": 22.3,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "04 Nov 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058643",
+          "origin": "India",
+          "initial_volume": 2194000.0,
+          "balance": 1330540.7,
+          "pct_used": 39.4,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "10 Sep 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058644",
+          "origin": "Turkey",
+          "initial_volume": 7479000.0,
+          "balance": 5276723.0,
+          "pct_used": 29.4,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "04 Oct 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058645",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 1252000.0,
+          "balance": 1226094.39,
+          "pct_used": 2.1,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 21",
+      "name": "Hollow sections",
+      "related_product": "Hollow Sections",
+      "related_product_url": "/products/general-steels/hollow-sections/",
+      "quotas": [
+        {
+          "order_number": "058646",
+          "origin": "European Union",
+          "initial_volume": 8809000.0,
+          "balance": 3981459.68,
+          "pct_used": 54.8,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "21 Aug 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058647",
+          "origin": "Turkey",
+          "initial_volume": 24849000.0,
+          "balance": 19727306.0,
+          "pct_used": 20.6,
+          "last_allocation_date": "22 Jul 2026",
+          "predicted_exhaustion": "14 Nov 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058648",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 2874000.0,
+          "balance": 2465071.823,
+          "pct_used": 14.2,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 25A",
+      "name": "Large welded tubes (1)",
+      "related_product": "Offshore & Marine Grades",
+      "related_product_url": "/products/tubes/offshore-marine-grades/",
+      "quotas": [
+        {
+          "order_number": "058649",
+          "origin": "European Union",
+          "initial_volume": 1766000.0,
+          "balance": 0.0,
+          "pct_used": 100.0,
+          "last_allocation_date": "01 Jul 2026",
+          "predicted_exhaustion": "Already exhausted",
+          "status": "EXHAUSTED"
+        },
+        {
+          "order_number": "058650",
+          "origin": "Japan",
+          "initial_volume": 103000.0,
+          "balance": 103000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "No allocations yet",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058651",
+          "origin": "South Korea",
+          "initial_volume": 164000.0,
+          "balance": 164000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "No allocations yet",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058652",
+          "origin": "United States",
+          "initial_volume": 123000.0,
+          "balance": 123000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "No allocations yet",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058653",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 384000.0,
+          "balance": 214830.0,
+          "pct_used": 44.1,
+          "last_allocation_date": "22 Jul 2026",
+          "predicted_exhaustion": "03 Sep 2026",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 25B",
+      "name": "Large welded tubes (2)",
+      "related_product": "Offshore & Marine Grades",
+      "related_product_url": "/products/tubes/offshore-marine-grades/",
+      "quotas": [
+        {
+          "order_number": "058654",
+          "origin": "European Union",
+          "initial_volume": 6304000.0,
+          "balance": 6147440.974,
+          "pct_used": 2.5,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058655",
+          "origin": "Japan",
+          "initial_volume": 66000.0,
+          "balance": 66000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "No allocations yet",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058656",
+          "origin": "South Korea",
+          "initial_volume": 873000.0,
+          "balance": 873000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "No allocations yet",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058657",
+          "origin": "Turkey",
+          "initial_volume": 1277000.0,
+          "balance": 1277000.0,
+          "pct_used": 0.0,
+          "last_allocation_date": "No allocations yet",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058658",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 800000.0,
+          "balance": 719087.0,
+          "pct_used": 10.1,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 26",
+      "name": "Other welded tubes",
+      "related_product": "ERW Precision Tube",
+      "related_product_url": "/products/tubes/erw-precision-tube/",
+      "quotas": [
+        {
+          "order_number": "058659",
+          "origin": "European Union",
+          "initial_volume": 7506000.0,
+          "balance": 4581301.775,
+          "pct_used": 39.0,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "11 Sep 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058660",
+          "origin": "Switzerland",
+          "initial_volume": 273000.0,
+          "balance": 272912.41,
+          "pct_used": 0.0,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058661",
+          "origin": "Turkey",
+          "initial_volume": 3629000.0,
+          "balance": 1196210.222,
+          "pct_used": 67.0,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "12 Aug 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058662",
+          "origin": "United Arab Emirates",
+          "initial_volume": 2736000.0,
+          "balance": 2717069.0,
+          "pct_used": 0.7,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058663",
+          "origin": "United States",
+          "initial_volume": 912000.0,
+          "balance": 818252.146,
+          "pct_used": 10.3,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058664",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 4081000.0,
+          "balance": 393251.719,
+          "pct_used": 90.4,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "01 Aug 2026",
+          "status": "CRITICAL"
+        }
+      ]
+    },
+    {
+      "code": "CAT 27",
+      "name": "Non-alloy & other alloy cold finished bars",
+      "related_product": "Carbon and Alloy Steel",
+      "related_product_url": "/products/engineering/carbon-and-alloy-steel/",
+      "quotas": [
+        {
+          "order_number": "058665",
+          "origin": "European Union",
+          "initial_volume": 4952000.0,
+          "balance": 2579642.81,
+          "pct_used": 47.9,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "29 Aug 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058666",
+          "origin": "Turkey",
+          "initial_volume": 1342000.0,
+          "balance": 907098.0,
+          "pct_used": 32.4,
+          "last_allocation_date": "16 Jul 2026",
+          "predicted_exhaustion": "26 Sep 2026",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058667",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 1087000.0,
+          "balance": 756083.64,
+          "pct_used": 30.4,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "01 Oct 2026",
+          "status": "OPEN"
+        }
+      ]
+    },
+    {
+      "code": "CAT 28",
+      "name": "Non-alloy wire",
+      "related_product": null,
+      "related_product_url": null,
+      "quotas": [
+        {
+          "order_number": "058668",
+          "origin": "European Union",
+          "initial_volume": 10789000.0,
+          "balance": 9310833.435,
+          "pct_used": 13.7,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058669",
+          "origin": "Japan",
+          "initial_volume": 94000.0,
+          "balance": 84411.0,
+          "pct_used": 10.2,
+          "last_allocation_date": "27 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058670",
+          "origin": "United States",
+          "initial_volume": 1519000.0,
+          "balance": 1503201.0,
+          "pct_used": 1.0,
+          "last_allocation_date": "06 Jul 2026",
+          "predicted_exhaustion": "Not on course to exhaust",
+          "status": "OPEN"
+        },
+        {
+          "order_number": "058671",
+          "origin": "Countries other than Member States of the European Union",
+          "initial_volume": 2530000.0,
+          "balance": 728967.2,
+          "pct_used": 71.2,
+          "last_allocation_date": "24 Jul 2026",
+          "predicted_exhaustion": "10 Aug 2026",
+          "status": "WATCH"
+        }
+      ]
+    }
+  ]
+}
