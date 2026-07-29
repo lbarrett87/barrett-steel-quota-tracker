@@ -1,0 +1,38 @@
+name: Daily Steel Quota Update
+
+# Runs automatically once a day, and can also be triggered manually
+# from the Actions tab for testing.
+on:
+  schedule:
+    - cron: "0 6 * * *"   # 06:00 UTC daily — adjust as needed
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  update-quota-data:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Fetch latest quota data
+        run: python scripts/fetch_quotas.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name "quota-tracker-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add quota-data.json quota-changes.json
+          git diff --quiet --staged || git commit -m "Daily quota data update"
+          git push
+
+      # Optional next step: if quota-changes.json is non-empty, this is
+      # where a webhook call to Make.com/Zapier would go to trigger the
+      # alert emails to subscribed customers. See README-SETUP.md.
