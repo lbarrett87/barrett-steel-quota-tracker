@@ -1,40 +1,4 @@
 {
-  "generated": "2026-07-29T19:59:03.162536+00:00",
-  "changes": [
-    {
-      "order_number": "058603",
-      "category": "CAT 1: Non-alloy & other alloy hot-rolled sheets & strips",
-      "new_status": "WATCH"
-    },
-    {
-      "order_number": "058622",
-      "category": "CAT 12B: Non-alloy merchant bars & light sections",
-      "new_status": "WATCH"
-    },
-    {
-      "order_number": "058623",
-      "category": "CAT 12B: Non-alloy merchant bars & light sections",
-      "new_status": "CRITICAL"
-    },
-    {
-      "order_number": "058627",
-      "category": "CAT 13: Rebars",
-      "new_status": "CRITICAL"
-    },
-    {
-      "order_number": "058630",
-      "category": "CAT 14: Stainless bars & light sections",
-      "new_status": "WATCH"
-    },
-    {
-      "order_number": "058664",
-      "category": "CAT 26: Other welded tubes",
-      "new_status": "CRITICAL"
-    },
-    {
-      "order_number": "058671",
-      "category": "CAT 28: Non-alloy wire",
-      "new_status": "WATCH"
-    }
-  ]
+  "generated": "2026-07-30T08:06:23.810660+00:00",
+  "changes": []
 }
