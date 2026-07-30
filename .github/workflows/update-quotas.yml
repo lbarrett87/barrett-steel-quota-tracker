@@ -1,10 +1,12 @@
 name: Daily Steel Quota Update
 
-# Runs automatically once a day, and can also be triggered manually
+# Runs several times a day, and can also be triggered manually
 # from the Actions tab for testing.
 on:
   schedule:
-    - cron: "0 6 * * *"   # 06:00 UTC daily — adjust as needed
+    # Runs four times a day. GitHub's free scheduler delays or skips runs
+    # when busy, so multiple attempts prevent the page going stale.
+    - cron: "0 6,10,14,18 * * *"
   workflow_dispatch: {}
 
 permissions:
