@@ -1,20 +1,4 @@
 {
-  "generated": "2026-08-05T12:27:55.206653+00:00",
-  "changes": [
-    {
-      "order_number": "058611",
-      "category": "CAT 5: Organic coated sheets",
-      "new_status": "WATCH"
-    },
-    {
-      "order_number": "058632",
-      "category": "CAT 15: Stainless wire rod",
-      "new_status": "CRITICAL"
-    },
-    {
-      "order_number": "058661",
-      "category": "CAT 26: Other welded tubes",
-      "new_status": "WATCH"
-    }
-  ]
+  "generated": "2026-08-05T19:06:01.084737+00:00",
+  "changes": []
 }
