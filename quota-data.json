@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-07T12:31:31.366628+00:00",
+  "last_updated": "2026-08-07T16:37:32.078051+00:00",
   "source": "UK Government Trade Tariff API (trade-tariff.service.gov.uk), Open Government Licence v3.0",
   "categories": [
     {
@@ -45,7 +45,7 @@
           "balance": 2070515.176,
           "pct_used": 83.4,
           "last_allocation_date": "05 Aug 2026",
-          "predicted_exhaustion": "14 Aug 2026",
+          "predicted_exhaustion": "15 Aug 2026",
           "status": "WATCH"
         }
       ]
@@ -73,7 +73,7 @@
           "balance": 20617250.0,
           "pct_used": 34.4,
           "last_allocation_date": "03 Aug 2026",
-          "predicted_exhaustion": "16 Oct 2026",
+          "predicted_exhaustion": "17 Oct 2026",
           "status": "OPEN"
         },
         {
@@ -121,7 +121,7 @@
           "balance": 3114096.59,
           "pct_used": 75.0,
           "last_allocation_date": "05 Aug 2026",
-          "predicted_exhaustion": "19 Aug 2026",
+          "predicted_exhaustion": "20 Aug 2026",
           "status": "WATCH"
         },
         {
@@ -179,7 +179,7 @@
           "balance": 280687.0,
           "pct_used": 55.7,
           "last_allocation_date": "05 Aug 2026",
-          "predicted_exhaustion": "05 Sep 2026",
+          "predicted_exhaustion": "06 Sep 2026",
           "status": "OPEN"
         },
         {
@@ -207,7 +207,7 @@
           "balance": 36793429.086,
           "pct_used": 26.7,
           "last_allocation_date": "05 Aug 2026",
-          "predicted_exhaustion": "16 Nov 2026",
+          "predicted_exhaustion": "17 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -379,7 +379,7 @@
           "balance": 36929.935,
           "pct_used": 93.7,
           "last_allocation_date": "05 Aug 2026",
-          "predicted_exhaustion": "09 Aug 2026",
+          "predicted_exhaustion": "10 Aug 2026",
           "status": "CRITICAL"
         }
       ]
@@ -493,7 +493,7 @@
           "balance": 2247222.45,
           "pct_used": 32.0,
           "last_allocation_date": "31 Jul 2026",
-          "predicted_exhaustion": "24 Oct 2026",
+          "predicted_exhaustion": "25 Oct 2026",
           "status": "OPEN"
         }
       ]
@@ -559,7 +559,7 @@
           "balance": 4236922.0,
           "pct_used": 43.3,
           "last_allocation_date": "03 Aug 2026",
-          "predicted_exhaustion": "24 Sep 2026",
+          "predicted_exhaustion": "25 Sep 2026",
           "status": "OPEN"
         },
         {
@@ -791,7 +791,7 @@
           "balance": 247973.637,
           "pct_used": 93.9,
           "last_allocation_date": "05 Aug 2026",
-          "predicted_exhaustion": "09 Aug 2026",
+          "predicted_exhaustion": "10 Aug 2026",
           "status": "CRITICAL"
         }
       ]
@@ -829,7 +829,7 @@
           "balance": 694156.375,
           "pct_used": 36.1,
           "last_allocation_date": "05 Aug 2026",
-          "predicted_exhaustion": "11 Oct 2026",
+          "predicted_exhaustion": "12 Oct 2026",
           "status": "OPEN"
         }
       ]
