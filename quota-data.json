@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-14T16:36:46.146500+00:00",
+  "last_updated": "2026-08-14T20:02:30.483122+00:00",
   "source": "UK Government Trade Tariff API (trade-tariff.service.gov.uk), Open Government Licence v3.0",
   "categories": [
     {
@@ -237,7 +237,7 @@
           "balance": 2021732.21,
           "pct_used": 43.9,
           "last_allocation_date": "12 Aug 2026",
-          "predicted_exhaustion": "09 Oct 2026",
+          "predicted_exhaustion": "10 Oct 2026",
           "status": "OPEN"
         }
       ]
@@ -283,7 +283,7 @@
           "balance": 587774.502,
           "pct_used": 95.1,
           "last_allocation_date": "12 Aug 2026",
-          "predicted_exhaustion": "16 Aug 2026",
+          "predicted_exhaustion": "17 Aug 2026",
           "status": "CRITICAL"
         },
         {
@@ -511,7 +511,7 @@
           "balance": 972732.0,
           "pct_used": 47.7,
           "last_allocation_date": "31 Jul 2026",
-          "predicted_exhaustion": "01 Oct 2026",
+          "predicted_exhaustion": "02 Oct 2026",
           "status": "OPEN"
         },
         {
