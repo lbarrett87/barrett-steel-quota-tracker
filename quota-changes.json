@@ -1,4 +1,15 @@
 {
-  "generated": "2026-08-13T20:04:11.500592+00:00",
-  "changes": []
+  "generated": "2026-08-14T09:42:57.455881+00:00",
+  "changes": [
+    {
+      "order_number": "058646",
+      "category": "CAT 21: Hollow sections",
+      "new_status": "WATCH"
+    },
+    {
+      "order_number": "058666",
+      "category": "CAT 27: Non-alloy & other alloy cold finished bars",
+      "new_status": "WATCH"
+    }
+  ]
 }
