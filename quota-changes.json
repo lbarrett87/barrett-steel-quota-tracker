@@ -1,4 +1,10 @@
 {
-  "generated": "2026-08-14T20:02:30.484850+00:00",
-  "changes": []
+  "generated": "2026-08-15T07:20:14.622165+00:00",
+  "changes": [
+    {
+      "order_number": "058664",
+      "category": "CAT 26: Other welded tubes",
+      "new_status": "CRITICAL"
+    }
+  ]
 }
