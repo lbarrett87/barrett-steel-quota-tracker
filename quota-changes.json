@@ -1,15 +1,4 @@
 {
-  "generated": "2026-08-19T07:58:42.080215+00:00",
-  "changes": [
-    {
-      "order_number": "058619",
-      "category": "CAT 7: Non-alloy & other alloy quarto plates",
-      "new_status": "WATCH"
-    },
-    {
-      "order_number": "058665",
-      "category": "CAT 27: Non-alloy & other alloy cold finished bars",
-      "new_status": "WATCH"
-    }
-  ]
+  "generated": "2026-08-19T11:00:24.595728+00:00",
+  "changes": []
 }
