@@ -1,15 +1,4 @@
 {
-  "generated": "2026-08-21T08:06:07.692844+00:00",
-  "changes": [
-    {
-      "order_number": "058639",
-      "category": "CAT 17: Angles, shapes & sections",
-      "new_status": "CRITICAL"
-    },
-    {
-      "order_number": "058666",
-      "category": "CAT 27: Non-alloy & other alloy cold finished bars",
-      "new_status": "WATCH"
-    }
-  ]
+  "generated": "2026-08-21T11:03:00.024098+00:00",
+  "changes": []
 }
