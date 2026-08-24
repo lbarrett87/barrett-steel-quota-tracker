@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-08-24T08:28:38.247352+00:00",
+  "last_updated": "2026-08-24T11:15:01.348279+00:00",
   "source": "UK Government Trade Tariff API (trade-tariff.service.gov.uk), Open Government Licence v3.0",
   "categories": [
     {
@@ -587,7 +587,7 @@
           "balance": 1968640.289,
           "pct_used": 77.7,
           "last_allocation_date": "20 Aug 2026",
-          "predicted_exhaustion": "08 Sep 2026",
+          "predicted_exhaustion": "09 Sep 2026",
           "status": "WATCH"
         },
         {
