@@ -1,15 +1,4 @@
 {
-  "generated": "2026-08-26T08:11:00.818961+00:00",
-  "changes": [
-    {
-      "order_number": "058626",
-      "category": "CAT 13: Rebars",
-      "new_status": "WATCH"
-    },
-    {
-      "order_number": "058644",
-      "category": "CAT 20: Gas pipes",
-      "new_status": "WATCH"
-    }
-  ]
+  "generated": "2026-08-26T11:16:26.935108+00:00",
+  "changes": []
 }
