@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-03T10:49:20.274059+00:00",
+  "last_updated": "2026-09-03T17:35:40.993471+00:00",
   "source": "UK Government Trade Tariff API (trade-tariff.service.gov.uk), Open Government Licence v3.0",
   "categories": [
     {
@@ -45,7 +45,7 @@
           "balance": 1734103.604,
           "pct_used": 86.1,
           "last_allocation_date": "01 Sep 2026",
-          "predicted_exhaustion": "13 Sep 2026",
+          "predicted_exhaustion": "14 Sep 2026",
           "status": "WATCH"
         }
       ]
@@ -73,7 +73,7 @@
           "balance": 14452612.499,
           "pct_used": 54.0,
           "last_allocation_date": "18 Aug 2026",
-          "predicted_exhaustion": "27 Oct 2026",
+          "predicted_exhaustion": "28 Oct 2026",
           "status": "OPEN"
         },
         {
@@ -207,7 +207,7 @@
           "balance": 25742771.59,
           "pct_used": 48.7,
           "last_allocation_date": "01 Sep 2026",
-          "predicted_exhaustion": "09 Nov 2026",
+          "predicted_exhaustion": "10 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -511,7 +511,7 @@
           "balance": 820185.72,
           "pct_used": 55.9,
           "last_allocation_date": "28 Aug 2026",
-          "predicted_exhaustion": "23 Oct 2026",
+          "predicted_exhaustion": "24 Oct 2026",
           "status": "OPEN"
         },
         {
@@ -539,7 +539,7 @@
           "balance": 2260380.267,
           "pct_used": 49.5,
           "last_allocation_date": "01 Sep 2026",
-          "predicted_exhaustion": "07 Nov 2026",
+          "predicted_exhaustion": "08 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -587,7 +587,7 @@
           "balance": 1419162.339,
           "pct_used": 83.9,
           "last_allocation_date": "01 Sep 2026",
-          "predicted_exhaustion": "15 Sep 2026",
+          "predicted_exhaustion": "16 Sep 2026",
           "status": "WATCH"
         },
         {
@@ -741,7 +741,7 @@
           "balance": 1301453.156,
           "pct_used": 82.7,
           "last_allocation_date": "01 Sep 2026",
-          "predicted_exhaustion": "16 Sep 2026",
+          "predicted_exhaustion": "17 Sep 2026",
           "status": "WATCH"
         },
         {
