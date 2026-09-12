@@ -1,15 +1,4 @@
 {
-  "generated": "2026-09-12T10:15:21.300415+00:00",
-  "changes": [
-    {
-      "order_number": "058628",
-      "category": "CAT 14: Stainless bars & light sections",
-      "new_status": "WATCH"
-    },
-    {
-      "order_number": "058671",
-      "category": "CAT 28: Non-alloy wire",
-      "new_status": "CRITICAL"
-    }
-  ]
+  "generated": "2026-09-12T16:48:22.396779+00:00",
+  "changes": []
 }
