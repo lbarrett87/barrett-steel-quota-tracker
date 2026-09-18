@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-09-17T21:15:04.041001+00:00",
+  "last_updated": "2026-09-18T10:43:41.204937+00:00",
   "source": "UK Government Trade Tariff API (trade-tariff.service.gov.uk), Open Government Licence v3.0",
   "categories": [
     {
@@ -12,10 +12,10 @@
           "order_number": "058600",
           "origin": "European Union",
           "initial_volume": 93750000.0,
-          "balance": 46175993.702,
-          "pct_used": 50.7,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "02 Dec 2026",
+          "balance": 44945247.702,
+          "pct_used": 52.1,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "30 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -35,7 +35,7 @@
           "balance": 818250.0,
           "pct_used": 62.7,
           "last_allocation_date": "01 Jul 2026",
-          "predicted_exhaustion": "03 Nov 2026",
+          "predicted_exhaustion": "04 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -45,7 +45,7 @@
           "balance": 296731.654,
           "pct_used": 97.6,
           "last_allocation_date": "14 Sep 2026",
-          "predicted_exhaustion": "19 Sep 2026",
+          "predicted_exhaustion": "20 Sep 2026",
           "status": "CRITICAL"
         }
       ]
@@ -60,10 +60,10 @@
           "order_number": "058604",
           "origin": "European Union",
           "initial_volume": 127568000.0,
-          "balance": 37977257.685,
-          "pct_used": 70.2,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "20 Oct 2026",
+          "balance": 33765922.716,
+          "pct_used": 73.5,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "16 Oct 2026",
           "status": "WATCH"
         },
         {
@@ -73,7 +73,7 @@
           "balance": 14452612.499,
           "pct_used": 54.0,
           "last_allocation_date": "18 Aug 2026",
-          "predicted_exhaustion": "23 Nov 2026",
+          "predicted_exhaustion": "24 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -90,9 +90,9 @@
           "order_number": "058607",
           "origin": "Vietnam",
           "initial_volume": 43591000.0,
-          "balance": 35871743.0,
-          "pct_used": 17.7,
-          "last_allocation_date": "04 Sep 2026",
+          "balance": 35797553.0,
+          "pct_used": 17.9,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         },
@@ -103,7 +103,7 @@
           "balance": 1109501.015,
           "pct_used": 95.6,
           "last_allocation_date": "10 Sep 2026",
-          "predicted_exhaustion": "21 Sep 2026",
+          "predicted_exhaustion": "22 Sep 2026",
           "status": "CRITICAL"
         }
       ]
@@ -156,9 +156,9 @@
           "order_number": "058612",
           "origin": "European Union",
           "initial_volume": 9948000.0,
-          "balance": 8343849.189,
-          "pct_used": 16.1,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 8295531.189,
+          "pct_used": 16.6,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         },
@@ -179,17 +179,17 @@
           "balance": 239431.0,
           "pct_used": 62.2,
           "last_allocation_date": "07 Sep 2026",
-          "predicted_exhaustion": "04 Nov 2026",
+          "predicted_exhaustion": "05 Nov 2026",
           "status": "OPEN"
         },
         {
           "order_number": "058615",
           "origin": "Countries other than Member States of the European Union",
           "initial_volume": 6787000.0,
-          "balance": 3856436.48,
-          "pct_used": 43.2,
-          "last_allocation_date": "14 Sep 2026",
-          "predicted_exhaustion": "29 Dec 2026",
+          "balance": 3835415.48,
+          "pct_used": 43.5,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "30 Dec 2026",
           "status": "OPEN"
         }
       ]
@@ -204,19 +204,19 @@
           "order_number": "058616",
           "origin": "European Union",
           "initial_volume": 50217000.0,
-          "balance": 20528920.161,
-          "pct_used": 59.1,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "10 Nov 2026",
+          "balance": 19348636.572,
+          "pct_used": 61.5,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "06 Nov 2026",
           "status": "OPEN"
         },
         {
           "order_number": "058617",
           "origin": "South Korea",
           "initial_volume": 8448000.0,
-          "balance": 8350144.0,
-          "pct_used": 1.2,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 8305944.0,
+          "pct_used": 1.7,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         },
@@ -252,9 +252,9 @@
           "order_number": "058620",
           "origin": "European Union",
           "initial_volume": 20889000.0,
-          "balance": 7847620.119,
-          "pct_used": 62.4,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 7680470.419,
+          "pct_used": 63.2,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "03 Nov 2026",
           "status": "OPEN"
         },
@@ -262,9 +262,9 @@
           "order_number": "058621",
           "origin": "Countries other than Member States of the European Union",
           "initial_volume": 5585000.0,
-          "balance": 4679222.951,
-          "pct_used": 16.2,
-          "last_allocation_date": "14 Sep 2026",
+          "balance": 4618162.951,
+          "pct_used": 17.3,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         }
@@ -280,11 +280,11 @@
           "order_number": "058622",
           "origin": "European Union",
           "initial_volume": 11904000.0,
-          "balance": 0.0,
-          "pct_used": 100.0,
-          "last_allocation_date": "04 Sep 2026",
-          "predicted_exhaustion": "Already exhausted",
-          "status": "EXHAUSTED"
+          "balance": 20213.0,
+          "pct_used": 99.8,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "18 Sep 2026",
+          "status": "CRITICAL"
         },
         {
           "order_number": "058623",
@@ -293,7 +293,7 @@
           "balance": 165516.619,
           "pct_used": 96.5,
           "last_allocation_date": "03 Sep 2026",
-          "predicted_exhaustion": "20 Sep 2026",
+          "predicted_exhaustion": "21 Sep 2026",
           "status": "CRITICAL"
         },
         {
@@ -318,10 +318,10 @@
           "order_number": "058625",
           "origin": "European Union",
           "initial_volume": 37256000.0,
-          "balance": 16426633.416,
-          "pct_used": 55.9,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "18 Nov 2026",
+          "balance": 14117873.416,
+          "pct_used": 62.1,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "05 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -331,7 +331,7 @@
           "balance": 1809280.0,
           "pct_used": 85.7,
           "last_allocation_date": "21 Aug 2026",
-          "predicted_exhaustion": "30 Sep 2026",
+          "predicted_exhaustion": "01 Oct 2026",
           "status": "WATCH"
         },
         {
@@ -341,7 +341,7 @@
           "balance": 2150.0,
           "pct_used": 100.0,
           "last_allocation_date": "27 Jul 2026",
-          "predicted_exhaustion": "17 Sep 2026",
+          "predicted_exhaustion": "18 Sep 2026",
           "status": "CRITICAL"
         }
       ]
@@ -356,9 +356,9 @@
           "order_number": "058628",
           "origin": "European Union",
           "initial_volume": 4135000.0,
-          "balance": 1068815.598,
-          "pct_used": 74.2,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 1063739.849,
+          "pct_used": 74.3,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "15 Oct 2026",
           "status": "WATCH"
         },
@@ -366,9 +366,9 @@
           "order_number": "058629",
           "origin": "United States",
           "initial_volume": 445000.0,
-          "balance": 341181.558,
+          "balance": 341140.558,
           "pct_used": 23.3,
-          "last_allocation_date": "15 Sep 2026",
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         },
@@ -432,10 +432,10 @@
           "order_number": "058634",
           "origin": "European Union",
           "initial_volume": 42117000.0,
-          "balance": 20874294.727,
-          "pct_used": 50.4,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "03 Dec 2026",
+          "balance": 19353155.704,
+          "pct_used": 54.0,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "24 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -460,10 +460,10 @@
           "order_number": "058636",
           "origin": "European Union",
           "initial_volume": 63419000.0,
-          "balance": 18042189.637,
+          "balance": 18039581.537,
           "pct_used": 71.6,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "18 Oct 2026",
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "19 Oct 2026",
           "status": "WATCH"
         },
         {
@@ -493,7 +493,7 @@
           "balance": 121323.16,
           "pct_used": 96.3,
           "last_allocation_date": "04 Sep 2026",
-          "predicted_exhaustion": "20 Sep 2026",
+          "predicted_exhaustion": "21 Sep 2026",
           "status": "CRITICAL"
         }
       ]
@@ -508,10 +508,10 @@
           "order_number": "058640",
           "origin": "European Union",
           "initial_volume": 1859000.0,
-          "balance": 740304.22,
-          "pct_used": 60.2,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "08 Nov 2026",
+          "balance": 668331.22,
+          "pct_used": 64.0,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "01 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -536,10 +536,10 @@
           "order_number": "058642",
           "origin": "European Union",
           "initial_volume": 4474000.0,
-          "balance": 2125273.211,
-          "pct_used": 52.5,
-          "last_allocation_date": "14 Sep 2026",
-          "predicted_exhaustion": "27 Nov 2026",
+          "balance": 2061404.341,
+          "pct_used": 53.9,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "24 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -549,16 +549,16 @@
           "balance": 346701.23,
           "pct_used": 84.2,
           "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "02 Oct 2026",
+          "predicted_exhaustion": "03 Oct 2026",
           "status": "WATCH"
         },
         {
           "order_number": "058644",
           "origin": "Turkey",
           "initial_volume": 7479000.0,
-          "balance": 736683.0,
-          "pct_used": 90.1,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 718167.0,
+          "pct_used": 90.4,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "26 Sep 2026",
           "status": "CRITICAL"
         },
@@ -566,9 +566,9 @@
           "order_number": "058645",
           "origin": "Countries other than Member States of the European Union",
           "initial_volume": 1252000.0,
-          "balance": 1211378.56,
-          "pct_used": 3.2,
-          "last_allocation_date": "14 Sep 2026",
+          "balance": 1159858.56,
+          "pct_used": 7.4,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         }
@@ -584,20 +584,20 @@
           "order_number": "058646",
           "origin": "European Union",
           "initial_volume": 8809000.0,
-          "balance": 1137558.57,
-          "pct_used": 87.1,
-          "last_allocation_date": "14 Sep 2026",
-          "predicted_exhaustion": "29 Sep 2026",
+          "balance": 1129397.5,
+          "pct_used": 87.2,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "30 Sep 2026",
           "status": "WATCH"
         },
         {
           "order_number": "058647",
           "origin": "Turkey",
           "initial_volume": 24849000.0,
-          "balance": 9425461.57,
-          "pct_used": 62.1,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "04 Nov 2026",
+          "balance": 9401281.57,
+          "pct_used": 62.2,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "05 Nov 2026",
           "status": "OPEN"
         },
         {
@@ -665,7 +665,7 @@
           "balance": 182575.52,
           "pct_used": 52.5,
           "last_allocation_date": "03 Sep 2026",
-          "predicted_exhaustion": "27 Nov 2026",
+          "predicted_exhaustion": "29 Nov 2026",
           "status": "OPEN"
         }
       ]
@@ -680,9 +680,9 @@
           "order_number": "058654",
           "origin": "European Union",
           "initial_volume": 6304000.0,
-          "balance": 5850356.572,
-          "pct_used": 7.2,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 5794794.412,
+          "pct_used": 8.1,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         },
@@ -710,9 +710,9 @@
           "order_number": "058657",
           "origin": "Turkey",
           "initial_volume": 1277000.0,
-          "balance": 1175360.0,
-          "pct_used": 8.0,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 1155060.0,
+          "pct_used": 9.5,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         },
@@ -738,19 +738,19 @@
           "order_number": "058659",
           "origin": "European Union",
           "initial_volume": 7506000.0,
-          "balance": 299250.866,
-          "pct_used": 96.0,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "21 Sep 2026",
+          "balance": 216319.046,
+          "pct_used": 97.1,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "20 Sep 2026",
           "status": "CRITICAL"
         },
         {
           "order_number": "058660",
           "origin": "Switzerland",
           "initial_volume": 273000.0,
-          "balance": 262271.016,
-          "pct_used": 3.9,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 260148.096,
+          "pct_used": 4.7,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         },
@@ -761,7 +761,7 @@
           "balance": 393628.379,
           "pct_used": 89.2,
           "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "27 Sep 2026",
+          "predicted_exhaustion": "28 Sep 2026",
           "status": "WATCH"
         },
         {
@@ -806,9 +806,9 @@
           "order_number": "058665",
           "origin": "European Union",
           "initial_volume": 4952000.0,
-          "balance": 243480.302,
-          "pct_used": 95.1,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 208769.952,
+          "pct_used": 95.8,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "21 Sep 2026",
           "status": "CRITICAL"
         },
@@ -826,10 +826,10 @@
           "order_number": "058667",
           "origin": "Countries other than Member States of the European Union",
           "initial_volume": 1087000.0,
-          "balance": 459251.915,
-          "pct_used": 57.8,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "13 Nov 2026",
+          "balance": 439013.825,
+          "pct_used": 59.6,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "10 Nov 2026",
           "status": "OPEN"
         }
       ]
@@ -844,9 +844,9 @@
           "order_number": "058668",
           "origin": "European Union",
           "initial_volume": 10789000.0,
-          "balance": 7199530.904,
-          "pct_used": 33.3,
-          "last_allocation_date": "15 Sep 2026",
+          "balance": 7148331.717,
+          "pct_used": 33.7,
+          "last_allocation_date": "16 Sep 2026",
           "predicted_exhaustion": "Not on course to exhaust",
           "status": "OPEN"
         },
@@ -874,10 +874,10 @@
           "order_number": "058671",
           "origin": "Countries other than Member States of the European Union",
           "initial_volume": 2530000.0,
-          "balance": 54085.464,
-          "pct_used": 97.9,
-          "last_allocation_date": "15 Sep 2026",
-          "predicted_exhaustion": "19 Sep 2026",
+          "balance": 51585.464,
+          "pct_used": 98.0,
+          "last_allocation_date": "16 Sep 2026",
+          "predicted_exhaustion": "20 Sep 2026",
           "status": "CRITICAL"
         }
       ]

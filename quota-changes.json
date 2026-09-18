@@ -1,4 +1,10 @@
 {
-  "generated": "2026-09-17T21:15:04.042345+00:00",
-  "changes": []
+  "generated": "2026-09-18T10:43:41.206327+00:00",
+  "changes": [
+    {
+      "order_number": "058622",
+      "category": "CAT 12B: Non-alloy merchant bars & light sections",
+      "new_status": "CRITICAL"
+    }
+  ]
 }
