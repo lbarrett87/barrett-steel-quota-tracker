@@ -1,15 +1,4 @@
 {
-  "generated": "2026-09-20T10:48:57.389034+00:00",
-  "changes": [
-    {
-      "order_number": "058601",
-      "category": "CAT 1: Non-alloy & other alloy hot-rolled sheets & strips",
-      "new_status": "CRITICAL"
-    },
-    {
-      "order_number": "058647",
-      "category": "CAT 21: Hollow sections",
-      "new_status": "WATCH"
-    }
-  ]
+  "generated": "2026-09-20T17:19:36.742776+00:00",
+  "changes": []
 }
