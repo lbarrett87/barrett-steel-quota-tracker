@@ -1,4 +1,15 @@
 {
-  "generated": "2026-09-29T19:10:09.538063+00:00",
-  "changes": []
+  "generated": "2026-09-30T12:04:15.667756+00:00",
+  "changes": [
+    {
+      "order_number": "058625",
+      "category": "CAT 13: Rebars",
+      "new_status": "WATCH"
+    },
+    {
+      "order_number": "058659",
+      "category": "CAT 26: Other welded tubes",
+      "new_status": "CRITICAL"
+    }
+  ]
 }
