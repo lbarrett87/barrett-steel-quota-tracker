@@ -1,4 +1,45 @@
 {
-  "generated": "2026-10-02T19:02:07.360765+00:00",
-  "changes": []
+  "generated": "2026-10-03T11:14:37.676153+00:00",
+  "changes": [
+    {
+      "order_number": "058601",
+      "category": "CAT 1: Non-alloy & other alloy hot-rolled sheets & strips",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058611",
+      "category": "CAT 5: Organic coated sheets",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058619",
+      "category": "CAT 7: Non-alloy & other alloy quarto plates",
+      "new_status": "WATCH"
+    },
+    {
+      "order_number": "058623",
+      "category": "CAT 12B: Non-alloy merchant bars & light sections",
+      "new_status": "WATCH"
+    },
+    {
+      "order_number": "058624",
+      "category": "CAT 12B: Non-alloy merchant bars & light sections",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058627",
+      "category": "CAT 13: Rebars",
+      "new_status": "WATCH"
+    },
+    {
+      "order_number": "058630",
+      "category": "CAT 14: Stainless bars & light sections",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058661",
+      "category": "CAT 26: Other welded tubes",
+      "new_status": "WATCH"
+    }
+  ]
 }
