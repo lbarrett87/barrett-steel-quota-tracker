@@ -1,4 +1,20 @@
 {
-  "generated": "2026-10-05T21:24:11.620161+00:00",
-  "changes": []
+  "generated": "2026-10-06T12:55:15.951366+00:00",
+  "changes": [
+    {
+      "order_number": "058610",
+      "category": "CAT 5: Organic coated sheets",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058617",
+      "category": "CAT 7: Non-alloy & other alloy quarto plates",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058664",
+      "category": "CAT 26: Other welded tubes",
+      "new_status": "WATCH"
+    }
+  ]
 }
