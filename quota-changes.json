@@ -1,4 +1,10 @@
 {
-  "generated": "2026-10-15T18:04:13.655485+00:00",
-  "changes": []
+  "generated": "2026-10-16T10:53:58.876237+00:00",
+  "changes": [
+    {
+      "order_number": "058657",
+      "category": "CAT 25B: Large welded tubes (2)",
+      "new_status": "WATCH"
+    }
+  ]
 }
