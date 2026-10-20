@@ -1,4 +1,15 @@
 {
-  "generated": "2026-10-19T19:41:04.278263+00:00",
-  "changes": []
+  "generated": "2026-10-20T11:02:53.426464+00:00",
+  "changes": [
+    {
+      "order_number": "058609",
+      "category": "CAT 5: Organic coated sheets",
+      "new_status": "WATCH"
+    },
+    {
+      "order_number": "058665",
+      "category": "CAT 27: Non-alloy & other alloy cold finished bars",
+      "new_status": "WATCH"
+    }
+  ]
 }
