@@ -1,4 +1,35 @@
 {
-  "generated": "2026-10-28T19:22:10.895219+00:00",
-  "changes": []
+  "generated": "2026-10-29T12:27:04.748501+00:00",
+  "changes": [
+    {
+      "order_number": "058603",
+      "category": "CAT 1: Non-alloy & other alloy hot-rolled sheets & strips",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058622",
+      "category": "CAT 12B: Non-alloy merchant bars & light sections",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058639",
+      "category": "CAT 17: Angles, shapes & sections",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058644",
+      "category": "CAT 20: Gas pipes",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058647",
+      "category": "CAT 21: Hollow sections",
+      "new_status": "CRITICAL"
+    },
+    {
+      "order_number": "058661",
+      "category": "CAT 26: Other welded tubes",
+      "new_status": "CRITICAL"
+    }
+  ]
 }
