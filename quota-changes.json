@@ -1,15 +1,4 @@
 {
-  "generated": "2026-11-10T14:28:44.660064+00:00",
-  "changes": [
-    {
-      "order_number": "058665",
-      "category": "CAT 27: Non-alloy & other alloy cold finished bars",
-      "new_status": "CRITICAL"
-    },
-    {
-      "order_number": "058671",
-      "category": "CAT 28: Non-alloy wire",
-      "new_status": "WATCH"
-    }
-  ]
+  "generated": "2026-11-10T22:56:04.112446+00:00",
+  "changes": []
 }
